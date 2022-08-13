@@ -5,14 +5,16 @@ public class Main {
 
 
     public static void main(String[] args) {
+        Dog d1 = new Dog();
 
-        Dog d1 = new Dog(2015, true);
+        d1.setYearOfBirth( 2015 );
+        d1.setChip( true );
+        d1.setHurt( false );
+        d1.setWeight( 50 );
 
-        Dog d2 = new Dog (false, 6);
-
-        System.out.println(d1.getAge());
-        System.out.println(d1.getCanGetLost());
-        System.out.println(d2.getCanBeAdopted());
+        System.out.println( d1.getAge() );
+        System.out.println( d1.canGetLost() );
+        System.out.println( d1.getCanBeAdopted() );
 
     }
 }
